@@ -12,8 +12,6 @@
             font: normal 12pt Arial;
         }
 
-
-
     </style>
 
 </head>
@@ -27,10 +25,10 @@
     </p>
 
     <p>
-        Aqui temos um paragrafo com essa parte em <strong>negrito.</strong> p2
+        Aqui temos um <strong>DOM</strong> em negrito. p2
     </p>
     
-    <div>
+    <div id="msg">
         Aqui temos uma div, clique em min
     </div>
 
@@ -43,13 +41,17 @@
         var p1 = window.document.getElementsByTagName('p')[1]   // salvando conteudo do 2 paragrafo
         // var p2 = window.document.getElementsByTagName('p')[0]   // salvando conteudo do primeiro paragrafo
         var corpo = window.document.body
+        // var d = window.document.getElementById('msg')]
+        var d = window.document.querySelector('div#msg')                  // usando o querySelector
 
         // window.document.write('Está escrito assim: ' + p1.innerText + '</br>')
         // p2.style.color = 'green'         // alteração da variavel salva
         // corpo.style.background = 'black'  // alteração do estilo do documento 
 
         // document.write(p1.innerHTML)    // Codigo HTML como as formatações
-        window.alert(p1.innerHTML)      // Alert com a variavel que foi salva
+        // window.alert(p1.innerHTML)      // Alert com a variavel que foi salva
+
+        window.alert(d.innerText)
     </script>
 </body>
 </html>
