@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas JavaScript</title>
+
+    <style>
+        body {
+            font: normal 15pt arial;
+            color: rgb(4, 95, 95);
+            background-color: rgb(93, 224, 180);
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome? ')
+        document.writeln(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.</br>`)
+        document.writeln(`Seu nome em Maiusculo é: ${nome.toUpperCase()}</br>`)
+        document.writeln(`Seu nome em Minusculo é: ${nome.toLowerCase()}</br>`)
+        document.writeln('Tenha um bom dia!')
+    </script>
+</body>
+</html>
