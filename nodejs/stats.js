@@ -12,4 +12,4 @@ const stats = {
     percent: '${percent}%'
 }
 
-console.table(stats);
+console.table(stats);        
