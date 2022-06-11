@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas JavaScript</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: rgb(243, 48, 48);
+            font: normal 12pt Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        Iniciando os estudos com o DOM
+    </h1>
+
+    <p>
+        Aqui temos um paragrafo. p1
+    </p>
+
+    <p>
+        Aqui temos um <strong>DOM</strong> em negrito. p2
+    </p>
+    
+    <div id="msg">
+        Aqui temos uma div, clique em min
+    </div>
+
+    <script>
+
+        // window.document.write(window.document.charset + '</br>')
+        // window.document.write(window.navigator.appName + '</br>')
+        // window.document.write(window.document.URL + '</br>')
+
+        var p1 = window.document.getElementsByTagName('p')[1]   // salvando conteudo do 2 paragrafo
+        // var p2 = window.document.getElementsByTagName('p')[0]   // salvando conteudo do primeiro paragrafo
+        var corpo = window.document.body
+        // var d = window.document.getElementById('msg')]
+        var d = window.document.querySelector('div#msg')                  // usando o querySelector
+
+        // window.document.write('Está escrito assim: ' + p1.innerText + '</br>')
+        // p2.style.color = 'green'         // alteração da variavel salva
+        // corpo.style.background = 'black'  // alteração do estilo do documento 
+
+        // document.write(p1.innerHTML)    // Codigo HTML como as formatações
+        // window.alert(p1.innerHTML)      // Alert com a variavel que foi salva
+
+        window.alert(d.innerText)
+    </script>
+</body>
+</html>
